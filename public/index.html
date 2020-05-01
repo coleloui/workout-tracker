@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Workout Exercises</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+      body {
+        text-align: center;
+        background-color: cornflowerblue;
+      }
+      h1 {
+        font-size: 40px;
+        color: white;
+      }
+      .delete {
+        margin-left: 20px;
+        color: red;
+        cursor: pointer;
+        text-align: right;
+      }
+      input {
+        width: 200px;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 42px;
+        background-color: antiquewhite;
+      }
+      textarea {
+        width: 300px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 24px;
+        background-color: antiquewhite;
+      }
+      .data-title {
+        cursor: pointer;
+        font-size: 24px;
+      }
+      #results {
+        width: 400px;
+        height: 200px;
+        overflow: auto;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: antiquewhite;
+      }
+      #action-button {
+        display: inline-block;
+      }
+      #buttons {
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hi Friend!</h1>
+    <h2>Enter a Workout!</h2>
+    <input type="text" id="name" placeholder="exercise" />
+    <input type="text" id="type" placeholder="type" />
+    <input type="text" id="weight" placeholder="weight" />
+    <input type="text" id="sets" placeholder="sets" />
+    <input type="text" id="reps" placeholder="reps" />
+    <input type="text" id="duration" placeholder="duration" />
+    <div id="action-button">
+      <button type="submit" id="make-new">Submit</button>
+    </div>
+
+    <div id="results"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
