@@ -4,16 +4,12 @@ function getResults() {
     for (var i = 0; i < data.length; i++) {
       $("#results").prepend(
         "<p class='data-entry' data-id=" +
-        data._id +
-        "><span class='dataTitle' data-id=" +
-        data._id +
-        "><span data-id=" +
-        data.weight +
-        "><span data-id=" +
-        data.sets +
-        ">" +
-        data.name +
-        "</span><span class='delete'>X</span></p>"
+          data[i]._id +
+          "><span class='dataTitle' data-id=" +
+          data[i]._id +
+          ">" +
+          data[i].name + data[i].weight + data[i].sets + data[i].reps +
+          "</span><span class='delete'>X</span></p>"
       );
     }
   });
@@ -41,12 +37,8 @@ $(document).on("click", "#make-new", function (e) {
         data._id +
         "><span class='dataTitle' data-id=" +
         data._id +
-        "><span data-id=" +
-        data.weight +
-        "><span data-id=" +
-        data.sets +
         ">" +
-        data.name +
+        data.name + data.weight + data.sets + data.reps + 
         "</span><span class='delete'>X</span></p>"
     );
     $("#name").val("");
