@@ -8,7 +8,7 @@ function getResults() {
           "><span class='dataTitle' data-id=" +
           data[i]._id +
           ">" +
-          "name: " + data[i].name + "weight: " + data[i].weight + "sets: " + data[i].sets + "reps: " + data[i].reps +
+          "name:" + data[i].name + " weight:" + data[i].weight + " sets:" + data[i].sets + " reps:" + data[i].reps +
           "</span><span class='delete'>X</span></p>"
       );
     }
@@ -38,7 +38,7 @@ $(document).on("click", "#make-new", function (e) {
         "><span class='dataTitle' data-id=" +
         data._id +
         ">" +
-        "name: " + data.name + "weight: " + data.weight + "sets: " + data.sets + "reps: " + data.reps + 
+        "name:" + data.name + " weight:" + data.weight + " sets:" + data.sets + " reps:" + data.reps + 
         "</span><span class='delete'>X</span></p>"
     );
     $("#name").val("");
