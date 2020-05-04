@@ -37,6 +37,10 @@ $(document).on("click", "#make-new", function (e) {
         data._id +
         "><span class='dataTitle' data-id=" +
         data._id +
+        "><span data-id=" +
+        data.weight +
+        "><span data-id=" +
+        data.sets +
         ">" +
         data.name +
         "</span><span class='delete'>X</span></p>"
