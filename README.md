@@ -1,7 +1,7 @@
 # workout-tracker
 
 ## Description
-This project is used to to have a working website that shows the Burgers that you want to eat and have eatin.
+This project is used to to have a working website that shows your workouts.
 
 This project is deployed at https://sleepy-taiga-66644.herokuapp.com/
 
